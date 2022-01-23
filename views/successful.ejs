@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Successful</title>
+    <!-- <script rel="preload" src="../public/JsFiles/confetti.js" async></script> -->
+ <!-- <script src="../public/JsFiles/confetti.js"></script> -->
+    <link rel="icon" href="" sizes="16x16" type="image/png"
+        data-rh="true">
+    <style>
+        .cont {
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            text-align: center;
+        }
+        .cont>div:nth-child(1)>img {
+            width: 55%;
+        }
+        .cont>div:nth-child(2) {
+            width: 50%;
+            margin-left: 25%;
+        }
+        .cont>div:nth-child(2)>p:nth-child(1) {
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: -20px;
+            margin-bottom: 0;
+            text-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
+        }
+        .cont>div:nth-child(2)>p:nth-child(2) {
+            font-size: 16px;
+            margin-top: 10px;
+            color: rgb(133, 129, 129);
+        }
+        .gradient-button {
+            margin: 10px;
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 15px;
+            padding: 9px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #FFF;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 3px;
+            width: 400px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 15px;
+            height: 50px;
+        }
+        .gradient-button:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.40), 0 6px 6px rgba(0, 0, 0, 0.23);
+            margin: 8px 10px 12px;
+        }
+        .gradient-button-4 {
+            background-image: linear-gradient(to right, #00D2FF 0%, #3A7BD5 51%, #00D2FF 100%)
+        }
+        .gradient-button-4:hover {
+            background-position: right center;
+        }
+        button {
+            width: 70%;
+            margin: auto;
+            height: 40px;
+            font-size: 18px;
+            color: black;
+            border: 1px solid transparent;
+            border-radius: 1px;
+            margin-top: -20px;
+        }
+        #payment {
+            /* display: none; */
+            width: 70%;
+            height: 100vh;
+            position: static;
+            background: #fff url(https://i.pinimg.com/originals/35/f3/23/35f323bc5b41dc4269001529e3ff1278.gif) no-repeat center;
+            z-index: 99999;
+            margin: auto;
+            border: 1px solid white;
+        }
+        #payment p {
+            /* border: 1px solid red; */
+            color: rgb(56, 211, 104);
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 70vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="payment">
+        <p>Payment Successful</p>
+    </div>
+    <div class="cont">
+        <div><img
+                src="https://cdn.dribbble.com/users/1200451/screenshots/8759739/media/38dc1e5f1060c443d927978bef79968c.gif">
+        </div>
+        <div>
+            <p>Thank You for Purchasing</p>
+            <p>Please check your Mail for more Updates.</p>
+            <a href="index.html">
+                <button class="gradient-button gradient-button-4">Go to Home</button>
+            </a>
+        </div>
+    </div>
+    <script>
+        const payment = document.getElementById("payment")
+        //   window.addEventListener(()=>{
+        //   })
+        setTimeout(() => {
+            //    alert("done")
+            payment.style.display = "none";
+        }, 3000);
+        const start = () => {
+            setTimeout(function () {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+        //  for stopping the confetti
+        const stop = () => {
+            setTimeout(function () {
+                confetti.stop()
+            }, 10000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+        // after this here we are calling both the function so it works
+        start();
+        stop();
+            // if you dont want to make it stop and make it infinite you can just remove the stop function :blush:
+    </script>
+</body>
+</html>
