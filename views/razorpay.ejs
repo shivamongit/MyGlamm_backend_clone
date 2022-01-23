@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<style>
+    #loading{
+        margin:auto;
+        /* border: 1px solid red; */
+        width: 350px;
+        height: 350px;
+    }
+</style>
+<body>
+   
+    <!-- <button id="rzp-button1">Go to Pay</button> -->
+  <div id="loading">  <img src="https://c.tenor.com/gJLmlIn6EvEAAAAC/loading-gif.gif" height="100%" width="100%">  </div>
+
+</body>
+</html>
+
+
+
+
+
+<script>
+
+axios.post('/order').then((info) => {
+    console.log(info);
+    
+            var options = {
+                "key": "rzp_test_1QUwthR4KQ4Qbz", // Enter the Key ID generated from the Dashboard
+                "name": "Myglamm Pvt Ltd",
+                "amount": "600",
+                "description": "Order Transaction",
+                "image": "https://www.myglamm.com/images/myGlamm-icon.png",
+                "order_id": info.data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+                // "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
+                "callback_url": "http://localhost:5000/successful",
+
+    
+                "theme": {
+                    "color": "#3399cc"
+                }
+            };
+            
+            var rzp1 = new Razorpay(options);
+            setTimeout( function (e) {
+                     rzp1.open();
+                    e.preventDefault();
+            
+              }, 2000);
+            // document.getElementById('rzp-button1').onclick = function (e) {
+            //     rzp1.open();
+            //     e.preventDefault();
+            
+            // }
+    
+        })
+
+    </script>
