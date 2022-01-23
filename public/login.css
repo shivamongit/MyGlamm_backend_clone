@@ -1,0 +1,93 @@
+#main {
+
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    max-width: 700px;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 5%;
+}
+
+.x {
+    font-size: 20px;
+    margin-left: 95%;
+
+}
+
+.txt {
+    margin-left: 10%;
+}
+
+.txt1 {
+    margin-left: 34%;
+    margin-top: 3%;
+}
+
+form>input {
+    margin-left: 34%;
+}
+
+input[id="otp"] {
+    margin-left: 30%;
+    border: 0;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    width: 200px;
+}
+
+input[id="name"] {
+    border: 0;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    width: 200px;
+}
+
+.in {
+    display: flex;
+    margin-top: 6%;
+}
+
+.n1 {
+
+    margin-left: 8%;
+
+
+}
+
+.n2 {
+    margin-left: 10%;
+
+}
+
+.re {
+    margin-left: 40%;
+}
+
+.label {
+    margin-left: 15%;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 0;
+    width: 400px;
+    color: white;
+    height: 50px;
+    padding: 14px;
+
+}
+
+.btn {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+a {
+    text-decoration: none;
+}
