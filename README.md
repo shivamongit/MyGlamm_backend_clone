@@ -1,7 +1,7 @@
 # MyGlamm_backend_clone
 # Clone of Myglamm
+![Buy International Beauty Products- Skin Care, Makeup Kits, Cosmetics  myglamm com and 9 more pages - Personal - Microsoft​ Edge 12-02-2022 21_13_17](https://user-images.githubusercontent.com/60641065/153717916-5e7d33cd-0f3e-4b7c-8c15-630b52054564.png)
 
-![1_EQaS2ma0S9Od7qikk8z8-Q](https://user-images.githubusercontent.com/60641065/153717827-0c15f654-afce-4234-9d1b-6554c50627af.png)
 
 MyGlamm is India’s fastest growing direct-to-consumer beauty brand. MyGlamm embraces the philosophy of building a community with its users, engaging with them and eventually co-creating products with them. In July 2020, With over 800 SKUs across makeup, skincare and personal care, MyGlamm Beauty Products feature advanced, rich, feel-good formulas that are 100% cruelty-free, embrace Clean Beauty, and have skin-friendly ingredients.
 
